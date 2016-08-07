@@ -1,0 +1,1231 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>My Skills Design App</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="jquery.mobile.css">
+
+<link rel="stylesheet" type="text/css" href="estilos_my_skills_design.css">
+
+<script src="jquery.min.js"></script>
+
+<script src="jquery.mobile.js"></script>
+
+<link rel="stylesheet" type="text/css" href="menus.css">
+
+<link rel="stylesheet" type="text/css" href="menus.min.css">
+
+<script src="phonegap.js"></script>
+        
+ <script>
+	$(document).on('ready', function() {
+	        $.mobile.defaultPageTransition = 'flow';
+   
+
+	
+		$('#cerrar').on ('tap', function() {
+			navigator.app.exitApp();
+		});
+	 });
+	
+	$(document).on( 'pagebeforeshow', '#agregar', function() {
+		$('form').each (function() { this.reset(); });
+	});
+	
+	 $(document).on( 'pagebeforeshow', '#agregar_a', function() {
+		$('form').each (function() { this.reset(); });
+	});
+	
+ </script>
+
+
+
+
+</head>
+
+
+
+
+<body>
+
+ <!--------------------------------------------------------SECCIÓN MENU PRINCIPAL--> 
+
+<div data-role="page" id="pprincipal">
+
+  <header data-role="header">
+    <h1>My Skills Design</h1>
+    
+       <a href="#" id="cerrar" data-role="button" data-icon="delete"
+  		data-iconpos="notext" class="ui-btn-right"> cerrar </a>
+        
+       
+  </header>
+  
+<main data-role="content">
+
+<div class="ui-grid-a springboard">
+
+			<div class="ui-block-a">	
+            <a href="#m_dgrafico" data-role="button" data-inline="true">
+		
+          <picture>
+        	<source media="(max-width: 480px)" 
+            srcset="iconos/dgrafico_icono.png">
+            
+            <source media="(min-width: 481px)" 
+            srcset="iconos/dgrafico_icono_tab.png">
+
+              <img src="iconos/dgrafico_icono.png" alt="btn"> 
+           
+           </picture> 
+
+                </a> 
+                
+            </div>
+			<div class="ui-block-b">
+                <a href="#m_dweb" data-role="button" data-inline="true">
+                	
+                    <picture>
+        	<source media="(max-width: 480px)" 
+            srcset="iconos/dweb_icono.png">
+            
+            <source media="(min-width: 481px)" 
+            srcset="iconos/dweb_icono_tab.png">
+
+               <img src="iconos/dweb_icono.png" alt="btn">
+           
+           </picture> 
+                    	
+                </a>
+  			</div>
+  
+ 		<div class="ui-block-a">
+                <a href="#m_3d" data-role="button" data-inline="true">
+               
+                     <picture>
+        	<source media="(max-width: 480px)" 
+            srcset="iconos/3d_icono.png">
+            
+            <source media="(min-width: 481px)" 
+            srcset="iconos/3d_icono_tab.png">
+
+               <img src="iconos/3d_icono.png" alt="btn">
+           
+           </picture>
+                
+                </a>
+                 </div>
+                 
+        <div class="ui-block-b">
+                <a href="#perfil" data-role="button" data-inline="true">
+                   
+                   <picture>
+        	<source media="(max-width: 480px)" 
+            srcset="iconos/contacto_icono.png">
+            
+            <source media="(min-width: 481px)" 
+            srcset="iconos/contacto_icono_tab.png">
+
+               <img src="iconos/contacto_icono.png" alt="btn">
+           
+           </picture>
+               
+                </a>
+                  </div>
+ </div> 
+ 
+  </main>
+ 
+ 
+  <footer data-role="footer">
+     <a href="#alumnas" data-role="button" data-inline="true" data-transition="slideup">  
+    <img src="img_footer/f_version.png" alt="Version 1.1">
+    </a> 
+  </footer>
+  
+</div>
+
+ <!--------------------------------------------------------FIN SECCIÓN MENU PRINCIPAL--> 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <!--------------------------------------------------------SECCIÓN DISEÑO GRAFICO--> 
+
+ 
+
+ <div data-role="page" id="m_dgrafico">
+        
+<header data-role="header">
+     <h1>Diseño Gráfico</h1> 
+     
+    	<picture>
+        	<source media="(max-width: 480px)" 
+            srcset="img_menus/dg.jpg">
+            
+            <source media="(min-width: 800px)" 
+            srcset="img_menus/dg_tablet.jpg">
+          
+           <img src="img_menus/dg.jpg" alt="Imagen Diseño Grafico">  
+           
+           </picture>
+           
+      <a href="#" id="cerrar" data-role="button" data-icon="delete"
+  		data-iconpos="notext" class="ui-btn-right"> cerrar </a>
+           
+        <a href="#" data-rel="back" 
+    	data-icon="back" 
+        data-iconpos="notext" 
+        class="ui-btn-left">volver</a> 
+
+   </header>
+   
+   
+    
+   <main data-role="content">
+   <h1> Lo mejor del Universo Gráfico </h1>
+   
+<div data-role="collapsible-set" 
+        	data-expanded-icon="arrow-d"
+            data-collapsed-icon="bars" 
+            data-iconpos="right"
+            data-inset="false">
+		<div data-role="collapsible" data-collapsed="true" id="noticias_dg"> 
+            <h2> Noticias </h2>
+            <div data-role="collapsible" id="desplegable1_dg">
+            <h3> "Diseñadora recrea Futura en pan tostado." </h3>
+            <p>Futura, una tipografía que es de las mas usadas y a la vez odiadas por los diseñadores, fue recreada de una forma original, pues una diseñadora utilizó nada más y nada menos que piezas de pan tostado. <br> 
+La diseñadora Olga Cortés —quien se encuentra establecida en Lleida, España—, reprodujo cada letra de la tipografía sans serif Futurama en pan tostado, idea bastante original que se une a otras formas extrañas en que se ha reproducido los alfabetos con comida.
+<br> 
+El proyecto de Cortés se titula Futura Extra-Toasted, y reimagina la versión extra bold de esta tipografía, pero con un colorido inigualable. Cabe destacar que cada letra fue elaborada de manera meticulosa con utensilios de cocina.            
+<br> 
+            <img src="img_noticias/dg_noti1.jpg" alt="fuente_futura"> 
+            
+            </p>
+         </div>
+    
+                        
+            <div data-role="collapsible" id="desplegable2_dg"> 
+            <h3> "La receta del éxito de Disney revelada en una ilustración." </h3>
+            <p> Una ilustración hecha en 1957, que fue rescatada en los archivos de Disney, podría arrojar luz sobre la estrategia global sobre sus negocios y productos. <br> 
+La diseñadora Olga Cortés —quien se encuentra establecida en Lleida, España—, reprodujo cada letra de la tipografía sans serif Futurama en pan tostado, idea bastante original que se une a otras formas extrañas en que se ha reproducido los alfabetos con comida.
+<br> 
+Para algunos, esta ilustración es la receta del éxito de Disney, pues en ella hay elementos que sirven de referencia para la actual “teoría corporativa de crecimiento sostenido” de la mayor firma de contenidos de Hollywood.
+<br> 
+La ilustración refleja cómo es que una película se convierte en un activo central y que de ella se desprende un conjunto de activos o en palabras del ex director financiero de Disney, Jay Rasulo: un “enfoque incesante en franquicias”.<br> 
+            <img src="img_noticias/dg_noti2.jpg" alt="illust_disney"> 
+            
+            </p>
+            
+         </div>
+   </div>
+          
+
+         
+          
+          
+          
+          <div data-role="collapsible-set"
+        	data-expanded-icon="arrow-d"
+            data-collapsed-icon="bars"
+            data-iconpos="right"
+            data-inset="false">
+		<div data-role="collapsible" data-collapsed="true" id="trabajos_dg"> 
+        <h2> Trabajos para inspirarte </h2>  
+        
+        
+        <ul data-role="listview"
+        	data-inset="true"
+            
+            data-split-icon="user">
+            
+            <li>
+                    <a href="#ana_g_dg">
+                    	<img src="img_perfiles/a_guevara.jpg" alt="ana_guevara">
+                        <h3> Ana Guevara </h3>
+                        <p>Diseñadora Gráfica desde 1995</p>
+                      
+                    </a>
+                     </li>
+                     
+                     <li>
+                    <a href="#gonzalo_f_dg">
+                    	<img src="img_perfiles/g_furte.jpg" alt="gonzalo_furte">
+                        <h3> Gonzalo Furte </h3>
+                        <p>Diseñador Gráfico desde 2005</p>
+                      
+                    </a>
+               
+                </li>
+		</ul> 
+                      
+          </div>
+          </div>
+          </div>
+       
+   
+   </main>
+   
+   
+   
+   
+  <footer data-role="footer">
+    <h4> Octopus Multimedia </h4>
+    
+  </footer>
+</div>
+ <!--------------------------------------------------------FIN DISEÑO GRAFICO-->
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+  
+  <!--------------------------------------------------------SECCIÓN TPS ANA GUEVARA-->
+  <div data-role="page" id="ana_g_dg">
+  
+  
+<header data-role="header">
+      <h1>Trabajos de Ana Guevara</h1>
+      
+         <a href="#" id="cerrar" data-role="button" data-icon="delete"
+  		data-iconpos="notext" class="ui-btn-right"> cerrar </a>
+        <a href="#" data-rel="back" 
+    	data-icon="back" 
+        data-iconpos="notext" 
+        class="ui-btn-left">volver</a> 
+
+    </header>
+    
+    
+    <main data-role="content">
+    
+    <div class= "ui-grid-a grillana">
+    <div class="ui-block-a"> <img src="img_noticias/TP_AG_1.jpg" alt="trabajo_aguevara1"> </div>
+    <div class="ui-block-b"> <img src="img_noticias/TP_AG_2.jpg" alt="trabajo_aguevera2"> </div>
+ 	<div class="ui-block-a"> <img src="img_noticias/TP_AG_3.jpg" alt="trabajos_aguevara3"> </div>
+    <div class="ui-block-b"> <img src="img_noticias/TP_AG_4.jpg" alt="trabajos_aguevara4"> </div>
+    
+    
+    </div>
+    
+</main>
+    
+    
+    
+    <footer data-role="footer">
+      <h4> Octopus Multimedia </h4>
+    </footer>
+    
+</div>
+<!--------------------------------------------------------FIN SECCION TPS ANA GUEVARA-->
+ 
+ 
+ 
+   
+   
+  <!--------------------------------------------------------SECCIÓN TPS GONAZALO FURTE -->
+  <div data-role="page" id="gonzalo_f_dg">
+  
+  
+<header data-role="header">
+      <h1>Trabajos de Gonzalo Fuerte </h1>
+         <a href="#" id="cerrar" data-role="button" data-icon="delete"
+  		data-iconpos="notext" class="ui-btn-right"> cerrar </a>
+        <a href="#" data-rel="back" 
+    	data-icon="back" 
+        data-iconpos="notext" 
+        class="ui-btn-left">volver</a> 
+
+      
+    </header>
+    
+    
+    <main data-role="content">
+    
+    <div class= "ui-grid-a grillagon">
+    <div class="ui-block-a"> <img src="img_noticias/TP_GF_1.jpg" alt="trabajo_gfuerte1"> </div>
+    <div class="ui-block-b"> <img src="img_noticias/TP_GF_2.jpg" alt="trabajo_gfuerte2"> </div>
+ 	<div class="ui-block-a"> <img src="img_noticias/TP_GF_3.jpg" alt="trabajos_gfuerte3"> </div>
+    <div class="ui-block-b"> <img src="img_noticias/TP_GF_4.jpg" alt="trabajos_gfuerte4"> </div>
+    
+        </div>
+    
+</main>
+    
+    
+    
+    <footer data-role="footer">
+      <h4> Octopus Multimedia </h4>
+    </footer>
+    
+</div>
+  
+ <!--------------------------------------------------------FIN SECCION TPS GONZALO FURTE-->
+ 
+ 
+ 
+ 
+ 
+ 
+  <!--------------------------------------------------------SECCIÓN DISEÑO WEB-->
+  <div data-role="page" id="m_dweb" data-theme="b"> 
+  
+    
+<header data-role="header">
+     <h1>Diseño Web</h1>
+    
+    <picture>
+        	<source media="(max-width: 480px)" 
+            srcset="img_menus/dw.jpg">
+            
+            <source media="(min-width: 800px)" 
+            srcset="img_menus/dw_tablet.jpg">
+            
+     <img src="img_menus/dw.jpg" alt="Imagen Diseño web"> 
+     
+     </picture>
+     
+      <a href="#" id="cerrar" data-role="button" data-icon="delete"
+  		data-iconpos="notext" class="ui-btn-right"> cerrar </a>
+        <a href="#" data-rel="back" 
+    	data-icon="back" 
+        data-iconpos="notext" 
+        class="ui-btn-left">volver</a> 
+
+   </header>
+   
+   
+    
+    
+    <main data-role="content"> <h1> Lo mejor del Mundo Web </h1>
+    
+    
+    
+    <div data-role="collapsible-set"
+        	data-expanded-icon="arrow-d"
+            data-collapsed-icon="bars"
+            data-iconpos="right"
+            data-inset="false">
+		<div data-role="collapsible" data-collapsed="true" id="noticias_dw"> 
+            <h2> Noticias </h2>
+            <div data-role="collapsible" id="desplegable1_dw">  
+            <h3> "Plexus abre la inscripción para un curso sobre desarrollo de aplicaciones." </h3>
+
+         <p>La compañía tecnológica Plexus impartirá en el mes de julio un curso gratuito de 130  horas de duración sobre desarrollo de aplicaciones con tecnologías web para jóvenes desempleados menores de 30 años que cursen estudios de Ingeniería Técnica Informática o grado en Informática. La empresa tecnológica se compromete a contratar al 30% de los alumnos que finalicen la formación con asistencia superior al 90% de las clases.
+          
+</p> 
+    </div> 
+
+
+     <div data-role="collapsible" id="desplegable2_dw">   
+            <h3> "Pushbullet se reinventa." </h3>
+            <p> La aplicación ha recibido un lavado de cara en todas sus plataformas. Desde la extensión de Chrome hasta la versión de escritorio para Windows pasando por Android y iOS. Todas han recibido esta nueva interfaz tan mejorada. Ahora podremos tener chats individuales con cada usuario y enviar contenido. Por ejemplo, si recibes un interesante artículo puedes decírselo y comentarlo. </p>
+         </div>
+   
+
+</div> 
+
+<hr>
+         
+          
+          
+          
+          <div data-role="collapsible-set"
+        	data-expanded-icon="arrow-d"
+            data-collapsed-icon="bars"
+            data-iconpos="right"
+            data-inset="false">
+		<div data-role="collapsible" data-collapsed="true" id="trabajos_dw">   
+        <h2> Trabajos para inspirarte </h2>  
+        
+        
+        <ul data-role="listview"
+        	data-inset="true"
+            
+            data-split-icon="user">
+            
+            <li>
+                    <a href="#m_morita_w">
+                    	<img src="img_perfiles/m_morita.jpg" alt="mariano_morita">
+                        <h3> Mariano Morita </h3>
+                        <p>Diseñador Web desde 2002</p>
+                      
+                    </a>
+                     </li>
+                     
+                     <li>
+                    <a href="#a_rojas_w">
+                    	<img src="img_perfiles/a_rojas.jpg" alt="alejandro_rojas">
+                        <h3> Alejandro Rojas </h3>
+                        <p>Diseñador Web desde 2004</p>
+                      
+                    </a>
+               
+                </li>
+		</ul> 
+                      
+          </div>
+          </div>
+          </div>
+       
+
+   </main>
+    
+     
+    <footer data-role="footer">
+      <h4> Octopus Multimedia </h4>
+    </footer>
+  </div> 
+
+
+   <!--------------------------------------------------------SECCIÓN TPS MARIANO MORITA-->
+  <div data-role="page" id="m_morita_w" data-theme="b">  
+  
+  
+<header data-role="header">
+      <h1>Trabajos de Mariano Morita</h1>
+         <a href="#" id="cerrar" data-role="button" data-icon="delete"
+  		data-iconpos="notext" class="ui-btn-right"> cerrar </a>
+        <a href="#" data-rel="back" 
+    	data-icon="back" 
+        data-iconpos="notext" 
+        class="ui-btn-left">volver</a> 
+
+      
+    </header>
+    
+    
+    <main data-role="content">
+    
+    <div class= "ui-grid-a grillama">
+    <div class="ui-block-a"> <img src="img_noticias/TP_MM_1.jpg" alt="trabajo_mmorita1"> </div>
+    <div class="ui-block-b"> <img src="img_noticias/TP_MM_2.jpg" alt="trabajo_mmorita2"> </div>
+ 	<div class="ui-block-a"> <img src="img_noticias/TP_MM_3.jpg" alt="trabajos_mmorita3"> </div>
+    <div class="ui-block-b"> <img src="img_noticias/TP_MM_4.jpg" alt="trabajos_mmorita4"> </div>
+    
+        </div>
+</main>
+    
+    
+    
+    <footer data-role="footer">
+      <h4> Octopus Multimedia </h4>
+    </footer>
+    
+</div>
+ 
+ 
+ <!--------------------------------------------------------FIN SECCION TPS MARIANO MORITA-->
+ 
+ 
+ 
+   
+   
+  <!--------------------------------------------------------SECCIÓN TPS ALEJANDRO ROJAS -->
+
+ <div data-role="page" id="a_rojas_w" data-theme="b"> 
+  
+  
+<header data-role="header">
+      <h1>Trabajos de Alejandro Rojas </h1>
+         <a href="#" id="cerrar" data-role="button" data-icon="delete"
+  		data-iconpos="notext" class="ui-btn-right"> cerrar </a>
+        <a href="#" data-rel="back" 
+    	data-icon="back" 
+        data-iconpos="notext" 
+        class="ui-btn-left">volver</a> 
+
+      
+    </header>
+    
+    
+    <main data-role="content">
+    
+    <div class= "ui-grid-a grillale">
+    <div class="ui-block-a"> <img src="img_noticias/TP_AR_1.jpg" alt="trabajo_arojas1"> </div>
+    <div class="ui-block-b"> <img src="img_noticias/TP_AR_2.jpg" alt="trabajo_arojas2"> </div>
+ 	<div class="ui-block-a"> <img src="img_noticias/TP_AR_3.jpg" alt="trabajos_arojas3"> </div>
+    <div class="ui-block-b"> <img src="img_noticias/TP_AR_4.jpg" alt="trabajos_arojas4"> </div>
+    
+        </div>
+</main>
+    
+    
+    
+    <footer data-role="footer">
+      <h4> Octopus Multimedia </h4>
+    </footer>
+    
+</div>
+ 
+  
+ <!--------------------------------------------------------FIN SECCION TPS ALEJANDRO ROJAS-->
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   <!--------------------------------------------------------SECCIÓN 3D-->
+   
+   
+<div data-role="page" id="m_3d">
+   
+   
+   
+     <header data-role="header">
+     <h1> 3D </h1>
+     
+      <picture>
+        	<source media="(max-width: 480px)" 
+            srcset="img_menus/3d.jpg">
+            
+            <source media="(min-width: 800px)" 
+            srcset="img_menus/3d_tablet.jpg">
+            
+     <img src="img_menus/3d.jpg" alt="Imagen Diseño 3d">  
+     
+     </picture>
+     
+      <a href="#" id="cerrar" data-role="button" data-icon="delete"
+  		data-iconpos="notext" class="ui-btn-right"> cerrar </a>
+        
+        <a href="#" data-rel="back"  data-icon="back" data-iconpos="notext" 
+        class="ui-btn-left"> volver</a> 
+
+     </header>
+     
+     
+     
+     
+     
+     <main data-role="content">
+     <h1> Lo mejor del Universo Tridimensional</h1>
+     
+   
+      <div data-role="collapsible-set" data-theme="b"  
+        	data-expanded-icon="arrow-d"
+            data-collapsed-icon="bars"
+            data-iconpos="right"
+            data-inset="false">
+		<div data-role="collapsible" data-collapsed="true" id="noticias_3d">
+            <h2> Noticias </h2>
+            <div data-role="collapsible" id="desplegable1_3d">
+            <h3> "HP Sprout por fin consigue escanear objetos 3D de forma sencilla." </h3>
+
+      <p> Hace un par de semanas, HP nos presentó Sprout, un nuevo concepto All-in-one en el que se juega con un proyector y un escáner 3D, por cortesía de la tecnología Intel Real Sense. A aquella presentación no se llevaron un accesorio que hace aparición hoy, y tiene como misión registrar objetos en 3D en las mejores condiciones. 
+     <br>
+     ¿Cómo? La tecnología básica para hacerlo ya lo teníamos, así que lo que han hecho es añadir una plataforma giratoria con la que poder escanear de forma automática el objeto que situemos sobre ella. Junto al accesorio llegará nuevo software con el que sacar partido a la posibilidad.     
+     
+     <img src="img_noticias/3d_noti1.jpg" alt="hp_3d"> 
+     </p> 
+     
+    </div> 
+
+
+     <div data-role="collapsible" id="desplegable2_3d">
+            <h3> "Dubai imprimirá un edificio en 3D." </h3>
+            <p> Dubai dijo que construirá un pequeño edificio de oficinas utilizando una impresora 3D por primera vez, en un intento por desarrollar una tecnología que podría reducir los costos y ahorrar tiempo en tanto la ciudad crece.
+            <br>
+            Sería montado en el lugar dentro de unas pocas semanas. Los muebles de interior y los componentes estructurales también se construyen a través de la impresión en 3D con hormigón armado, de yeso reforzado con fibra de vidrio y plástico.
+            
+            <img src="img_noticias/3d_noti2.jpg" alt="edificios_dubai"> 
+            </p>
+       
+         </div>
+   
+
+</div> 
+
+     <hr>
+         
+          
+          
+          
+          <div data-role="collapsible-set"
+        	data-expanded-icon="arrow-d"
+            data-collapsed-icon="bars"
+            data-iconpos="right"
+            data-inset="false">
+		<div data-role="collapsible" data-collapsed="true" id="trabajos_3d">
+        <h2> Trabajos para inspirarte </h2> 
+        
+        
+        <ul data-role="listview"
+        	data-inset="true"
+            
+            data-split-icon="user">
+            
+            <li>
+                    <a href="#j_ringuin_3d">
+                    	<img src="img_perfiles/j_ringuin.jpg" alt="julian_ringuin">
+                        <h3> Julián Ringuin </h3>
+                        <p> Realizador  y Desarrollador en 3D desde 2010</p>
+                      
+                    </a>
+                     </li>
+                     
+                     <li>
+                    <a href="#p_overa_3d">
+                    	<img src="img_perfiles/p_overa.jpg" alt="pablo_overa">
+                        <h3> Pablo Overa </h3>
+                        <p> Realizador  y Desarrollador en 3D desde 2002 </p>
+                      
+                    </a>
+               
+                </li>
+		</ul> 
+                      
+          </div>
+          </div>
+          </div>
+       
+     </main>
+     
+     
+     
+     
+     
+     <footer data-role="footer">
+       <h4> Octopus Multimedia </h4>
+     </footer>
+     
+   </div>
+ 
+    <!--------------------------------------------------------FIN SECCIÓN 3D-->
+ 
+ 
+ 
+ 
+ 
+ 
+    <!--------------------------------------------------------SECCIÓN TPS JULIAN RINGUIN -->
+ 
+ 
+  <div data-role="page" id="j_ringuin_3d">
+  
+  
+<header data-role="header">
+      <h1>Trabajos de Julian Ringuin </h1>
+         <a href="#" id="cerrar" data-role="button" data-icon="delete"
+  		data-iconpos="notext" class="ui-btn-right"> cerrar </a>
+        <a href="#" data-rel="back" 
+    	data-icon="back" 
+        data-iconpos="notext" 
+        class="ui-btn-left">volver</a> 
+
+      
+    </header>
+    
+    
+    <main data-role="content">
+    
+    <div class= "ui-grid-a grillaju">
+    <div class="ui-block-a"> <img src="img_noticias/TP_JR_1.jpg" alt="trabajo_jringuin1"> </div>
+    <div class="ui-block-b"> <img src="img_noticias/TP_JR_2.jpg" alt="trabajo_jringuin2"> </div>
+ 	<div class="ui-block-a"> <img src="img_noticias/TP_JR_3.jpg" alt="trabajos_jringuin3"> </div>
+    <div class="ui-block-b"> <img src="img_noticias/TP_JR_4.jpg" alt="trabajos_jringuin4"> </div>
+        </div>
+</main>
+    
+    
+    
+    <footer data-role="footer">
+      <h4> Octopus Multimedia </h4>
+    </footer>
+    
+</div>
+ 
+  
+ 
+ 
+   <!--------------------------------------------------------FIN SECCIÓN TPS JULIAN RINGUIN -->
+ 
+ 
+ 
+ 
+     <!--------------------------------------------------------SECCIÓN TPS PABLO OVERA -->
+ 
+ 
+  <div data-role="page" id="p_overa_3d">
+  
+  
+<header data-role="header">
+      <h1>Trabajos de Pablo Overa </h1>
+         <a href="#" id="cerrar" data-role="button" data-icon="delete"
+  		data-iconpos="notext" class="ui-btn-right"> cerrar </a>
+        <a href="#" data-rel="back" 
+    	data-icon="back" 
+        data-iconpos="notext" 
+        class="ui-btn-left">volver</a> 
+
+      
+    </header>
+    
+    
+    <main data-role="content">
+    
+    <div class= "ui-grid-a grillapa">
+    <div class="ui-block-a"> <img src="img_noticias/TP_PO_1.jpg" alt="trabajo_povera1"> </div>
+    <div class="ui-block-b"> <img src="img_noticias/TP_PO_2.jpg" alt="trabajo_povera2"> </div>
+ 	<div class="ui-block-a"> <img src="img_noticias/TP_PO_3.jpg" alt="trabajos_povera3"> </div>
+    <div class="ui-block-b"> <img src="img_noticias/TP_PO_4.jpg" alt="trabajos_povera4"> </div>
+        </div>
+</main>
+    
+    
+    
+    <footer data-role="footer">
+      <h4> Octopus Multimedia </h4>
+    </footer>
+    
+</div>
+ 
+  
+ 
+ 
+ 
+   <!--------------------------------------------------------FIN SECCIÓN TPS PABLO OVERA -->
+ 
+ 
+ 
+ 
+   <!--------------------------------------------------------SECCIÓN INGRESO PERFIL -->
+   
+   
+   <div data-role="page" id="perfil">
+   
+   
+     <header data-role="header">
+       <h1> Perfil </h1>
+           <h2> Opciones personales </h2>
+       
+         <picture>
+        	<source media="(max-width: 480px)" 
+            srcset="img_menus/miperfil.jpg">
+            
+            <source media="(min-width: 800px)" 
+            srcset="img_menus/miperfil_tablet.jpg">
+            
+    <img src="img_menus/miperfil.jpg" alt="Imagen Header perfil">
+    
+    </picture>
+       
+       
+                <a href="#" id="cerrar" data-role="button" data-icon="delete"
+  		data-iconpos="notext" class="ui-btn-right"> cerrar </a>
+        
+        <a href="#" data-rel="back" 
+    	data-icon="back" 
+        data-iconpos="notext" 
+        class="ui-btn-left">volver</a> 
+
+        
+     </header>
+     
+     
+     
+     <main data-role="content">
+     
+     
+     <div data-role="collapsible-set"
+        	data-expanded-icon="arrow-d"
+            data-collapsed-icon="bars"
+            data-iconpos="right"
+            data-inset="false">
+		<div data-role="collapsible" data-collapsed="false" id="info_perfil"> 
+        <h2> Que hacer </h2>  
+   
+   <ul data-role="listview" data-inset="true">
+    <li><a href="#pendientes">
+        
+    <h2> Pendientes </h2>
+    <p>Agregar y Revisar </p></a>
+    </li>
+    <li><a href="#agenda">
+        
+    <h2> Agenda </h2>
+    <p> Contactos del mundo del Diseño</p></a>
+    </li>
+</ul>
+
+   </div>
+   </div>
+     
+     
+     
+
+     
+     </main>
+     
+     
+     
+     
+     
+     </div>
+   
+   
+   
+   
+ <!--------------------------------------------------------FIN SECCIÓN INGRESO PERFIL -->
+   
+   
+   
+   
+
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+ <!--------------------------------------------------------INICIO PENDIENTES -->   
+   
+
+
+   
+   
+   
+    <div data-role="page" id="pendientes" data-theme="b">
+   
+   
+     <header data-role="header">
+       <h1> Pendientes </h1>
+       
+        <picture>
+        	<source media="(max-width: 480px)" 
+            srcset="img_menus/pendientes.jpg">
+            
+            <source media="(min-width: 800px)" 
+            srcset="img_menus/pendientes_tablet.jpg">
+            
+    <img src="img_menus/pendientes.jpg" alt="Imagen Header Pendientes">
+    
+    </picture>
+       
+       
+                <a href="#" id="cerrar" data-role="button" data-icon="delete"
+  		data-iconpos="notext" class="ui-btn-right"> cerrar </a>
+        
+      <a href="#perfil" data-rel="back" 
+    	data-icon="back" 
+        data-iconpos="notext" 
+        class="ui-btn-left">volver</a> 
+         
+     </header>
+          
+     
+     <main data-role="content">
+     
+     <a href="#agregar" data-role="button" data-icon="custom" data-iconpos="notext">agregar</a>
+     
+     
+     
+    <div data-role="collapsible-set" id="ac_pend">
+    	
+        <div data-role="collapsible">
+    	    <h3 id="tit_e1">Impresiones - Ejemplo - </h3>
+    	    <p id="cont_e1"> Imprimir trabajos cliente Danko Design <br> $: 2850</p>
+     	    </div>
+    	
+
+        
+  	</div>  
+
+
+
+     <script src="insertar.js"></script>
+
+     
+     </main>
+ 
+     
+     
+     </div>
+   
+   
+      
+<!--------------------------------------------------------FIN PENDIENTES -->   
+   
+   
+   
+   
+   
+   
+<!--------------------------------------------------------INICIO AGREGAR PENDIENTE --> 
+
+
+
+
+
+         <div data-role="page" id="agregar" data-theme="b">
+     
+     
+     
+     <header data-role="header">
+       <h1> Pendientes </h1>
+       
+        <picture>
+        	<source media="(max-width: 480px)" 
+            srcset="img_menus/pendientes.jpg">
+            
+            <source media="(min-width: 800px)" 
+            srcset="img_menus/pendientes_tablet.jpg">
+            
+    <img src="img_menus/pendientes.jpg" alt="Imagen Header Pendientes">
+    
+    </picture>
+       
+       
+       
+                <a href="#perfil" id="cerrar" data-role="button" data-icon="delete"
+  		data-iconpos="notext" class="ui-btn-right"> cerrar </a>
+         
+         
+         <a href="#perfil" data-rel="back" 
+    	data-icon="back" 
+        data-iconpos="notext" 
+        class="ui-btn-left">volver</a> 
+
+     </header>
+     
+     
+     
+     <main data-role="content">
+     
+     <form id="formulario">
+				
+	<input type="text" id="tit_pend" placeholder="Titulo Pendiente" required />
+		
+    <input type="text" id="detalles" placeholder="Escribir pendiente" required/>
+
+	<input type="submit" value="Agregar" data-theme="b" data-inline="true"/>
+  
+
+
+  <script src="guardar.js"></script>
+
+
+  </form>  
+	
+  
+     
+     
+   
+     </main>
+     
+     
+     
+     
+     
+     </div>
+    
+   
+   
+   
+   
+   
+   
+<!--------------------------------------------------------FIN AGREGAR PENDIENTE -->   
+
+
+
+
+
+
+
+
+
+  
+   
+<!--------------------------------------------------------SECCION AGENDA  -->  
+
+ 
+   
+   <div data-role="page" id="agenda" data-theme="b">
+   
+   
+     <header data-role="header">
+       <h1> Agenda </h1>
+       
+       <picture>
+        	<source media="(max-width: 480px)" 
+            srcset="img_menus/agenda.jpg">
+            
+            <source media="(min-width: 800px)" 
+            srcset="img_menus/agenda_tablet.jpg">
+            
+    <img src="img_menus/agenda.jpg" alt="Imagen Header Agenda">
+    
+    </picture>
+       
+       
+                <a href="#" id="cerrar" data-role="button" data-icon="delete"
+  		data-iconpos="notext" class="ui-btn-right"> cerrar </a>
+        
+      <a href="#perfil" data-rel="back" 
+    	data-icon="back" 
+        data-iconpos="notext" 
+        class="ui-btn-left">volver</a> 
+         
+     </header>
+          
+     
+     <main data-role="content">
+     
+   
+     
+     <div data-role="collapsible-set" id="ac_agenda">
+    	
+        <div data-role="collapsible">
+    	    <h3 id="tit_a1"> pedro.guevara@empresa.com - Ejemplo - </h3>
+    	    <p id="cont_a1"> Director de la revista InDesign Revolution </p>
+     	    </div>
+    	
+
+        
+  	</div>  
+
+     </main>
+     
+     
+     
+     </div>
+  
+  
+  
+  
+  
+<!--------------------------------------------------------FIN SECCION AGENDA  -->   
+
+
+  
+
+   
+ 
+ 
+   
+   
+   
+   
+<!--------------------------------------------------------SECCIÓN VERSION -->
+
+<div data-role="page" id="alumnas" data-theme="b"> 
+
+
+
+  <header data-role="header">
+    <h1>Desarrolladoras</h1>
+    
+     <picture>
+        	<source media="(max-width: 480px)" 
+            srcset="img_menus/info.jpg">
+            
+            <source media="(min-width: 800px)" 
+            srcset="img_menus/info_tablet.jpg">
+            
+    <img src="img_menus/info.jpg" alt="Imagin Header Informacion">
+    
+    </picture>
+    
+      <a href="#" id="cerrar" data-role="button" data-icon="delete"
+  		data-iconpos="notext" class="ui-btn-right"> cerrar </a>
+        <a href="#" data-rel="back" 
+    	data-icon="back" 
+        data-iconpos="notext" 
+        class="ui-btn-left">volver</a> 
+
+  </header>
+  
+  <main data-role="content">
+    <div data-role="collapsible-set"
+        	data-expanded-icon="arrow-d"
+            data-collapsed-icon="bars"
+            data-iconpos="right"
+            data-inset="false">
+		<div data-role="collapsible" data-collapsed="true" id="info_trabajo"> 
+        <h2>Información</h2> 
+     
+    <p> My Skills Design<br>
+   Es la nueva app que todo artista necesita<br>
+   Pensada por y para ellos.<br>
+   ¡Vos tambien podes ser parte!</p>
+   
+   </div>
+   </div>
+   
+    <div data-role="collapsible-set"
+        	data-expanded-icon="arrow-d"
+            data-collapsed-icon="bars"
+            data-iconpos="right"
+            data-inset="false">
+		<div data-role="collapsible" data-collapsed="true" id="info_alumnas"> 
+        <h2>Desarrolladoras </h2>  
+   
+   <ul data-role="listview" data-inset="true">
+    <li><a href="#">
+        <img src="img_perfiles/c_doamaral.jpg">
+    <h2>Cassia Do Amaral</h2>
+    <p>Diseño Multimedial</p></a>
+    </li>
+    <li><a href="#">
+        <img src="img_perfiles/a_yazky.jpg">
+    <h2>Antonella Yazky</h2>
+    <p>Diseño Multimedial</p></a>
+    </li>
+</ul>
+
+   </div>
+   </div>
+  </main>
+  
+  
+  <footer data-role="footer">
+    <h4>Octopus Multimedia</h4>
+    <img src="img_footer/f_octopus.png" alt="Desarrollado por Octopus Multimedia">
+  </footer>
+  
+  
+  
+  
+</div>
+   
+<!--------------------------------------------------------FIN SECCIÓN VERSION -->
+   
+   
+
+</body>
+
+</html>
